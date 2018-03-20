@@ -1,0 +1,129 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DodgerBlue"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/udacity" />
+
+    <ImageView
+        android:id="@+id/droid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/address"
+        android:layout_below="@+id/logo"
+        android:layout_toLeftOf="@+id/udacity"
+        android:layout_toStartOf="@+id/udacity"
+        android:paddingLeft="8dp"
+        android:src="@drawable/droid" />
+
+
+    <TextView
+        android:id="@+id/udacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:paddingLeft="@dimen/padding"
+        android:layout_centerInParent="true"
+        android:textColor="@color/Black"
+        android:layout_below="@id/logo"
+        android:text="@string/Udacity"
+        android:textSize="@dimen/font" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/address"
+        android:layout_alignTop="@+id/address"
+        android:src="@drawable/map" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/udacity"
+        android:autoLink="map"
+        android:textColor="@color/Black"
+        android:textColorLink="@color/Black"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:paddingLeft="@dimen/padding"
+        android:text="@string/Address"
+        android:textSize="@dimen/font" />
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/padding"
+        android:text="@string/Website"
+        android:autoLink="web"
+        android:textColor="@color/Black"
+        android:textColorLink="@color/Black"
+        android:textSize="@dimen/font" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/website"
+        android:layout_alignTop="@+id/website"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toLeftOf="@+id/droid"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toStartOf="@+id/droid"
+        android:src="@drawable/globe" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:textColor="@color/Black"
+        android:textColorLink="@color/Black"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_centerHorizontal="true"
+        android:autoLink="phone"
+        android:paddingLeft="@dimen/padding"
+        android:text="@string/Phone"
+        android:textSize="@dimen/font" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/phone"
+        android:layout_below="@+id/address"
+        android:layout_toLeftOf="@+id/phone"
+        android:layout_toStartOf="@+id/phone"
+        android:src="@drawable/call"
+        android:id="@+id/imageView4" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/register"
+        android:layout_alignLeft="@+id/website"
+        android:layout_alignStart="@+id/website"
+        android:src="@drawable/login" />
+
+    <ImageView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/website"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/website"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/register" />
+
+</RelativeLayout>
